@@ -1,0 +1,47 @@
+.tip{
+
+    &__content{
+        grid-column: full-start / col-end 5;
+        background-color: $color-fa;
+
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-column-gap: 2rem;
+        grid-row-gap: 4rem;
+        align-items: center;
+        line-height: 1.3;
+
+        @media only screen and (max-width: $bp-medium){
+            grid-column: full-start/full-end;
+            padding: 1rem;
+        }
+
+        padding: 6vw 5rem;
+        margin: 4rem 0;
+
+        &__right{
+            width: 3rem;
+            stroke: 1px;
+            fill: $color-secondary-dark-2;
+        }
+    }
+
+    &__picture{
+        grid-column: col-start 6 / full-end;
+        display: grid;
+        align-items: center;
+        background-color: $color-fa;
+        margin: 4rem 0;
+
+        
+        @media only screen and (max-width: $bp-medium){
+            grid-column: full-start/full-end;
+            margin: 2rem 0;
+        }
+
+        &__img{
+            width: 100%;
+            grid-column: 1/-1;
+        }
+    }
+}

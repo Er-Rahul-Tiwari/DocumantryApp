@@ -1,0 +1,40 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+      -webkit-appearance: none;
+  
+      outline: none;
+      border-radius: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: $font-15;
+      padding: 1.2rem 1.8rem;
+      transition: all 0.2s;
+      position: relative;
+      color: $color-white;
+  
+      cursor: pointer;
+      border: none;
+    }
+  
+    &:hover {
+      background-color: $color-secondary-dark-2;
+    }
+  
+    &:active,
+    &:focus {
+      background-color: $color-secondary-dark;
+      outline: none;
+    }
+  
+    &--blue {
+      background-color: $color-secondary-dark-2;
+      color: $color-white;
+  
+      &::after {
+        background-color: $color-secondary-dark-2;
+      }
+    }
+  
+  }

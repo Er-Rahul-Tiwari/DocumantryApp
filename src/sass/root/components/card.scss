@@ -1,0 +1,21 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    grid-gap: 5rem;
+}
+
+.card{
+    
+    &__img{
+        width: 100%;
+    }
+    &__shadow{
+        box-shadow: 0 1px 3px rgba($color-black,.1);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    &__heading{
+        padding: 1rem;
+        font-weight: 600;
+    }
+}

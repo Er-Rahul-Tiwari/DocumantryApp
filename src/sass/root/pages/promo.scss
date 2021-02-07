@@ -1,0 +1,51 @@
+.promo{
+    grid-column: center-start / center-end;
+    margin-top: 2rem ;
+
+    border-bottom: 1px solid $color-aa;
+
+    @media only screen and (max-width: $bp-medium){
+        grid-column: full-start / full-end;
+        margin: 1rem;
+    }
+
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+        grid-column-gap: 4rem;
+        margin-bottom: 2rem;
+    }
+    &__card{
+        display: grid;
+        align-items: center;
+        grid-template-columns: min-content 1fr;
+        grid-column-gap: 2rem;
+        padding: 1rem;
+        box-shadow: 0 1px 3px rgba($color-black,.1);
+    }
+    &__icon{
+        width: 6rem;
+        height: 6rem;
+        background-color: $color-secondary-light;
+        border-radius: 50%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    &__svg{
+        width: 3rem;
+        grid-column: 1/2;
+        fill: $color-secondary-dark-2;
+    }
+
+
+    &__box{
+        grid-column: 2/3;
+        font-size: 1.4rem;
+    }
+    &__heading{
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1;
+    }
+}
