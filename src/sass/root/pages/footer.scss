@@ -1,0 +1,19 @@
+.footers{
+    grid-column: full-start / full-end;
+    padding: 7rem 5rem;
+    background-color: $color-ee;
+}
+
+.footer{
+    display: grid;
+    grid-row-gap: 2rem;
+    grid-auto-flow: row;
+
+    a{
+        color: $color-777;
+        
+        &:hover{
+            color: $color-black;
+        }
+    }
+}

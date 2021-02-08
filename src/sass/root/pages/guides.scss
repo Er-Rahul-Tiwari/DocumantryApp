@@ -1,0 +1,16 @@
+.guides{
+    grid-column: center-start / center-end;
+    margin: 7rem 0;
+
+    @media only screen and (max-width:$bp-medium){
+        grid-column: full-start / full-end;
+    }
+
+    &__mb{
+        margin-bottom: 4rem;
+    }
+    &__para{
+        padding: 0 1rem  2rem 1rem;
+        line-height: 1.3;
+    }
+}

@@ -6,6 +6,10 @@ import Hero from './components/Hero';
 import Promo from './components/Promo';
 import Tip from './components/Tip';
 import Explore from './components/Explore';
+import Promotion from './components/Promotion';
+import Guides from './components/Guides';
+import Footer from './components/Footer';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
@@ -16,6 +20,10 @@ function App() {
       <Slider />
       <Tip />
       <Explore />
+      <Promotion />
+      <Guides />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }

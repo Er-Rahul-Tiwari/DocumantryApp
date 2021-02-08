@@ -1,3 +1,20 @@
-.explores{
-    grid-column: center-start/center-end;
+.explores {
+  grid-column: center-start/center-end;
+  margin: 4rem 0;
+}
+.explore {
+    padding: 4rem 0;
+
+  &__center {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    &:hover{
+        cursor: pointer;
+    }
+  }
+  &__icon {
+    width: 6rem;
+  }
 }
